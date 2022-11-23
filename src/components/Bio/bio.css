@@ -1,11 +1,12 @@
 .bio-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .image-container {
-  flex: 1 1 40%;
+  flex: 1 1 30rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +16,7 @@
 }
 
 .text-container {
-  flex: 2 1 60%;
+  flex: 1 1 50rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,4 +32,5 @@
 
 .text-paragraph-container p {
   line-height: 1.5rem;
+  /* max-width: 400px; */
 }
