@@ -1,0 +1,29 @@
+.do-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 7rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.do-card-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  /* border: 2px solid black; */
+}
+
+.do-items {
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 10px/10px;
+  text-align: left;
+}
