@@ -17,6 +17,21 @@
   align-items: center;
 }
 
+.do-title img {
+  max-width: 250px;
+  max-height: 250px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.do-title img:hover {
+  cursor: pointer;
+}
+
+.do-title p {
+  font-style: italic;
+}
+
 .card {
   /* border: 2px solid black; */
 }

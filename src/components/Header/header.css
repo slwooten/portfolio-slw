@@ -9,8 +9,12 @@
 
 .title {
   font-size: .8rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .nav-tabs {
   display: flex;
+  justify-content: space-between;
 }
