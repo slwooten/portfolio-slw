@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Quote from './components/Quote';
 import Bio from './components/Bio';
 import WhatIDo from './components/WhatIDo';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <WhatIDo />
       <Quote />
       <Bio />
+      <Projects />
     </div>
   );
 }
