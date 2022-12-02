@@ -6,7 +6,7 @@ import Project from './Project';
 
 const Projects = () => {
 
-  const [acitveIndex, setActiveIndex] = useState(null);
+  const [acitveIndex, setActiveIndex] = useState(0);
 
   return (
     <div className='projects-section'>
@@ -14,6 +14,8 @@ const Projects = () => {
       <div className='projects-cards-container'>
         <Project
           title='Classroom'
+          appLink='https://classroom-tracker-app.herokuapp.com/'
+          gitLink='https://github.com/slwooten/classroom'
           tech={[
             'MongoDB',
             'Express.js',
@@ -27,6 +29,8 @@ const Projects = () => {
         </Project>
         <Project
           title='Pixel Mixup'
+          appLink='https://bit-by-bit-2022-05-05.herokuapp.com/login'
+          gitLink='https://github.com/felix1805/pixel-mixup'
           tech={[
             'MongoDB',
             'Express.js',
@@ -40,6 +44,8 @@ const Projects = () => {
         </Project>
         <Project
           title='Color Creator'
+          appLink='https://slwooten.github.io/color-creator/'
+          gitLink='https://github.com/slwooten/color-creator'
           tech={[
             'MongoDB',
             'Express.js',
@@ -53,6 +59,8 @@ const Projects = () => {
         </Project>
         <Project
           title='Vue To Do'
+          appLink='https://slwooten.github.io/vuejs-todo-list/'
+          gitLink='https://github.com/slwooten/vuejs-todo-list'
           tech={[
             'MongoDB',
             'Express.js',
