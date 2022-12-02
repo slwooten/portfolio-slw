@@ -2,11 +2,14 @@ import React from 'react';
 
 import './bio.css';
 
+import BioIcon from '@mui/icons-material/PersonSearch';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+
 const Bio = () => {
   return (
     <div className='bio-container'>
       <div className='image-container'>
-        <h1>Image of me here</h1>
+        <BioIcon sx={{ fontSize: '12rem' }} />
       </div>
       <div className='text-container'>
         <h1>Bio</h1>
