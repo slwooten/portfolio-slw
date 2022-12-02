@@ -18,3 +18,9 @@
   display: flex;
   justify-content: space-between;
 }
+
+.nav-tabs a {
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 1rem .5rem 1rem .5rem;
+}
