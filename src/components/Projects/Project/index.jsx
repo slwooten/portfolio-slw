@@ -21,7 +21,7 @@ const Project = ({
       {isActive ? (
         <div>
           <h3>What is {title}?</h3>
-          <p>{children}</p>
+          <p className='description'>{children}</p>
           <h3>Technologies Used:</h3>
           {tech.map((item) => {
             return <p key={item}>- {item}</p>

@@ -20,12 +20,14 @@ const Projects = () => {
             'MongoDB',
             'Express.js',
             'React.js',
-            'Node.js'
+            'Node.js',
+            'GraphQL',
+            'Material UI'
           ]}
           isActive={acitveIndex === 0}
           onShow={() => setActiveIndex(0)}
         >
-          Here is the description for Classroom.
+          Classroom is a rather simple application built for teachers/instructors/professors alike.
         </Project>
         <Project
           title='Pixel Mixup'
@@ -33,44 +35,45 @@ const Projects = () => {
           gitLink='https://github.com/felix1805/pixel-mixup'
           tech={[
             'MongoDB',
+            'Mongoose',
             'Express.js',
             'React.js',
-            'Node.js'
+            'Node.js',
+            'GraphQL'
           ]}
           isActive={acitveIndex === 1}
           onShow={() => setActiveIndex(1)}
         >
-          Here is the description for Pixel Mixup.
+          An application where users can create, manage, and share pixel art in a 16x16 layout.
         </Project>
         <Project
           title='Color Creator'
           appLink='https://slwooten.github.io/color-creator/'
           gitLink='https://github.com/slwooten/color-creator'
           tech={[
-            'MongoDB',
-            'Express.js',
             'React.js',
-            'Node.js'
+            'useState hook',
+            'useEffect hook',
+            'useRef hook'
           ]}
           isActive={acitveIndex === 2}
           onShow={() => setActiveIndex(2)}
         >
-          Here is the description for Color Creator.
+          A React application that generates color palettes and displays examples of what they would look like in use.
         </Project>
         <Project
           title='Vue To Do'
           appLink='https://slwooten.github.io/vuejs-todo-list/'
           gitLink='https://github.com/slwooten/vuejs-todo-list'
           tech={[
-            'MongoDB',
-            'Express.js',
-            'React.js',
-            'Node.js'
+            'Vue.js',
+            'Vue.js Composition API',
+            'Local Storage',
           ]}
           isActive={acitveIndex === 3}
           onShow={() => setActiveIndex(3)}
         >
-          Here is the description for Vue To Do.
+          A Todo list application built with Vue.js and utilizing Local Storage. Minimal styling. Built to practice with Vue.js.
         </Project>
       </div>
     </div>
