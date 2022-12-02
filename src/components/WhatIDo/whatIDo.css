@@ -37,8 +37,14 @@
 /* } */
 
 .do-items {
-  border: 2px solid black;
+  display: flex;
+  /* border: 2px solid black; */
   padding: 1rem;
   border-radius: 10px/10px;
   text-align: left;
+}
+
+.do-items h3 {
+  font-size: 3rem;
+  margin: 0 1rem 0 1rem;
 }
