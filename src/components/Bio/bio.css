@@ -5,6 +5,8 @@
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 7rem;
+  border-bottom: solid 2px black;
+  padding-bottom: 5rem;
 }
 
 .image-container {

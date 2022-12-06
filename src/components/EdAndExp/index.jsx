@@ -2,13 +2,13 @@ import React from 'react';
 
 import './EdAndEx.css';
 
-import TimelineItem from './TimelineItem';
+// import TimelineItem from './TimelineItem';
 import EducationItem from './EducationItem';
 
 const EdAndExp = () => {
     return (
         <div className='ed-and-ex-container'>
-            <div className='education'>
+            {/* <div className='education'>
                 <h1>Education</h1>
                 <div className='timeline'>
                     <TimelineItem
@@ -44,7 +44,7 @@ const EdAndExp = () => {
                         link='https://www.credly.com/badges/e4fcdd65-a61d-40f5-b3c6-0d21d9d55942?source=linked_in_profile'
                     />
                 </div>
-            </div>
+            </div> */}
             <div className='experience'>
                 <h1>Experience</h1>
                 <div className='experience-container'>
