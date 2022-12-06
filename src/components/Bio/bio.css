@@ -36,6 +36,7 @@
 }
 
 .text-paragraph-container p {
-  line-height: 1.5rem;
+  line-height: 2rem;
+  margin-left: 15px;
   /* max-width: 400px; */
 }

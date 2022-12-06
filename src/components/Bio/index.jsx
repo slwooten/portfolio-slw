@@ -12,7 +12,7 @@ const Bio = () => {
         <BioIcon sx={{ fontSize: '12rem' }} />
       </div>
       <div className='text-container'>
-        <h1>Bio</h1>
+        {/* <h1>Bio</h1> */}
         <div className='text-paragraph-container'>
           <div>
             <h2>My Background</h2>
