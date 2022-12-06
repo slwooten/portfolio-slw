@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import './projects.css';
 
+import ConstructionIcon from '@mui/icons-material/Construction';
+
 import Project from './Project';
 
 const Projects = () => {
@@ -10,6 +12,7 @@ const Projects = () => {
 
   return (
     <div className='projects-section'>
+      <ConstructionIcon sx={{ fontSize: '5rem', marginBottom: '10px' }} />
       <h1>Projects I've built & Contributed to</h1>
       <div className='projects-cards-container'>
         <Project
@@ -26,6 +29,7 @@ const Projects = () => {
           ]}
           isActive={acitveIndex === 0}
           onShow={() => setActiveIndex(0)}
+          hide={() => setActiveIndex(4)}
         >
           Classroom is a rather simple application built for teachers/instructors/professors alike.
         </Project>
@@ -43,6 +47,7 @@ const Projects = () => {
           ]}
           isActive={acitveIndex === 1}
           onShow={() => setActiveIndex(1)}
+          hide={() => setActiveIndex(4)}
         >
           An application where users can create, manage, and share pixel art in a 16x16 layout.
         </Project>
@@ -58,6 +63,7 @@ const Projects = () => {
           ]}
           isActive={acitveIndex === 2}
           onShow={() => setActiveIndex(2)}
+          hide={() => setActiveIndex(4)}
         >
           A React application that generates color palettes and displays examples of what they would look like in use.
         </Project>
@@ -72,6 +78,7 @@ const Projects = () => {
           ]}
           isActive={acitveIndex === 3}
           onShow={() => setActiveIndex(3)}
+          hide={() => setActiveIndex(4)}
         >
           A Todo list application built with Vue.js and utilizing Local Storage. Minimal styling. Built to practice with Vue.js.
         </Project>

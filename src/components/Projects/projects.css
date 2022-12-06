@@ -5,6 +5,8 @@
   align-items: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  padding-bottom: 10rem;
+  border-bottom: 2px solid black;
 }
 
 .projects-section h1 {
@@ -28,12 +30,23 @@
   border: solid black 2px;
   border-radius: 10px/10px;
   max-width: 550px;
-  max-height: 525px;
+  /* max-height: 525px; */
   min-width: 250px;
   min-height: 225px;
   margin: 2rem;
   padding: 2rem;
   padding-bottom: 4rem;
+}
+
+.close {
+  color: blue;
+  padding: .5rem;
+  align-self: flex-start;
+}
+
+.close:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .project-card h1 {

@@ -12,11 +12,17 @@ const Project = ({
   children,
   tech,
   appLink,
-  gitLink
+  gitLink,
+  hide
 }) => {
 
   return (
     <div className='project-card'>
+      {isActive ? (
+        <p onClick={hide} className='close'>{'< '}Minimize</p>
+      ) : (
+        <p></p>
+      )}
       <h1>{title}</h1>
       {isActive ? (
         <div>
