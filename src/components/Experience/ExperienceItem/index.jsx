@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './EducationItem.css';
+import './ExperienceItem.css';
 
-const EducationItem = ({
+const ExperienceItem = ({
   company,
   position,
   startDate,
@@ -26,4 +26,4 @@ const EducationItem = ({
   );
 };
 
-export default EducationItem;
+export default ExperienceItem;
