@@ -19,7 +19,7 @@ const TimelineItem = ({
       </div>
       <div className='timeline-item-info'>
         <h3 style={{ color: color }}>{level}</h3>
-        <a href={link} className='institute'>{institute}{' >'}</a>
+        <a href={link} target='new' className='institute'>{institute}{' >'}</a>
         {concentration === 'none' ? <p></p> : <p>Concentration in {concentration}</p>}
         <p className='grad'>Graduated in {gradDate}</p>
       </div>

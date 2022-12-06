@@ -1,0 +1,11 @@
+.experience-item {
+  border: 2px solid black;
+  border-radius: 10px/10px;
+  text-align: left;
+  max-width: 45rem;
+  padding: 2rem;
+}
+
+.experience-item li {
+  line-height: 2rem;
+}
