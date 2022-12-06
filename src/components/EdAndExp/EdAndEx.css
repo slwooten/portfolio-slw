@@ -1,0 +1,13 @@
+.ed-and-ex-container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    margin-top: 5rem;
+    padding: 2rem;
+}

@@ -6,7 +6,7 @@ import Project from './Project';
 
 const Projects = () => {
 
-  const [acitveIndex, setActiveIndex] = useState(0);
+  const [acitveIndex, setActiveIndex] = useState(4);
 
   return (
     <div className='projects-section'>

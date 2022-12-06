@@ -6,6 +6,7 @@ import Quote from './components/Quote';
 import Bio from './components/Bio';
 import WhatIDo from './components/WhatIDo';
 import Projects from './components/Projects';
+import EdAndExp from './components/EdAndExp';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Quote />
       <Bio />
       <Projects />
+      <EdAndExp />
     </div>
   );
 }
