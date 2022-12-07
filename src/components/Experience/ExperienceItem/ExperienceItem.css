@@ -9,3 +9,12 @@
 .experience-item li {
   line-height: 2rem;
 }
+
+.company-name {
+  text-decoration: none;
+  color: black;
+}
+
+.bold {
+  font-weight: bold;
+}

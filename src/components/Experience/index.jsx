@@ -21,6 +21,7 @@ const Experience = () => {
         <div className='experience-container'>
           <ExperienceItem
             company='edX'
+            link='https://www.edx.org/'
             position='Teacher Assistant'
             startDate='Jun 2022'
             endDate='Present'

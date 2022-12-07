@@ -8,15 +8,22 @@ const ExperienceItem = ({
   startDate,
   endDate,
   location,
-  description
+  description,
+  link
 }) => {
   return (
     <div className='experience-item'>
-      <h3>{company}</h3>
-      <p>Position: {position}</p>
+      <h3>Company:{' '} 
+        <span>
+          <a className='company-name' href={link} target='new'>
+            {company}
+          </a>
+        </span>
+      </h3>
+      <p><span className='bold'>Position:</span> {position}</p>
       <p>{startDate} - {endDate}</p>
       <p>{location}</p>
-      <p>Description: </p>
+      <p className='bold'>Description: </p>
       <ul>
         {description.map((item, index) => {
           return <li key={index}>{item}</li>
