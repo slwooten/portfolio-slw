@@ -6,17 +6,35 @@ import front from '../../images/frontHat.png';
 
 const WhatIDo = () => {
 
+  // Profile image state //
   const [hat, setHat] = useState(true);
-
   const changeHat = () => {
     setHat(!hat);
   };
+
+  // greeting state //
+  const [greetingIndex, setGreetingIndex] = useState(0);
+
+  const changeGreeting = () => {
+    if (greetingIndex < 3) {
+      setGreetingIndex(greetingIndex + 1);
+      return;
+    }
+    setGreetingIndex(0);
+  }
 
   return (
     <div className='do-container'>
       <div className='do-title'>
         <h1>Web Developer</h1>
-        <p>Hello, my name is Seth.</p>
+        <p className='greeting' onMouseOver={changeGreeting}>
+          {greetingIndex === 0 ? 'Hello, my name is Seth.' : 
+          greetingIndex === 1 ? 'language 2' :
+          greetingIndex === 2 ? 'language 3' :
+          greetingIndex === 3 ? 'language 4' :
+          'Hello, my name is Seth.'
+          }
+        </p>
         <img onClick={changeHat} src={hat ? backward : front} alt='bitmoji' />
       </div>
       <div className='do-card-container'>
