@@ -3,7 +3,6 @@ import React from 'react';
 import './bio.css';
 
 import BioIcon from '@mui/icons-material/PersonSearch';
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 
 const Bio = () => {
   return (

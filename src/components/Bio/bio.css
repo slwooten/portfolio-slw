@@ -35,6 +35,10 @@
   flex-direction: column;
 }
 
+.text-paragraph-container h2 {
+  font-size: 2rem;
+}
+
 .text-paragraph-container p {
   line-height: 2rem;
   margin-left: 15px;

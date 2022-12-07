@@ -23,6 +23,10 @@
   /* padding: 2rem; */
 }
 
+.ed-img-container h1 {
+  font-size: 4rem;
+}
+
 .timeline {
   display: flex;
   flex-direction: row;
@@ -31,4 +35,10 @@
   /* flex: 1 1 50%; */
   margin-top: 1rem;
   padding: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .ed-img-container h1 {
+    font-size: 2rem;
+  }
 }

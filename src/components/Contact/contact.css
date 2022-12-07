@@ -5,6 +5,7 @@
   justify-content: space-around;
   align-items: center;
   margin-bottom: 5rem;
+  padding-top: 3rem;
 }
 
 .form-container {
@@ -14,7 +15,7 @@
 }
 
 .form-container h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .form {

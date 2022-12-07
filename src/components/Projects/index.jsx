@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <div className='projects-section'>
       <ConstructionIcon sx={{ fontSize: '5rem', marginBottom: '10px' }} />
-      <h1>Projects I've built & Contributed to</h1>
+      <h1 className='project-heading'>Projects I've built & Contributed to</h1>
       <div className='projects-cards-container'>
         <Project
           title='Classroom'

@@ -14,10 +14,10 @@ const WhatIDo = () => {
 
   return (
     <div className='do-container'>
-      <div onClick={changeHat} className='do-title'>
+      <div className='do-title'>
         <h1>Web Developer</h1>
-        <p>Something about doing what I love...</p>
-        <img src={hat ? backward : front} alt='bitmoji' />
+        <p>Hello, my name is Seth.</p>
+        <img onClick={changeHat} src={hat ? backward : front} alt='bitmoji' />
       </div>
       <div className='do-card-container'>
         <div className='card'>

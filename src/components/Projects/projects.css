@@ -14,6 +14,10 @@
   margin-bottom: 5rem;
 }
 
+.project-heading {
+  font-size: 4rem;
+}
+
 .projects-cards-container {
   display: flex;
   justify-content: center;
@@ -88,4 +92,10 @@
   cursor: pointer;
   transform: scale(1.1);
   transition: ease 96ms;
+}
+
+@media screen and (max-width: 480px) {
+  .project-heading {
+    font-size: 2rem;
+  }
 }

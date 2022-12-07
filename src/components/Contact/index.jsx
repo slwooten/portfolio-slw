@@ -46,7 +46,7 @@ const Contact = () => {
             onChange={updateBody}
           />
           <a href={`mailto:slwooten14@gmail.com?subject=${subject}&body=${body}`}>
-            <Button sx={{ width: '8rem', alignSelf: 'center', textTransform: 'none' }} variant="contained">Email</Button>
+            <Button sx={{ width: '8rem', alignSelf: 'center', textTransform: 'none' }} variant="contained">Email Me</Button>
           </a>
         </div>
       </div>
