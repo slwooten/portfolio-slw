@@ -71,10 +71,8 @@
   animation: animate 16s infinite;
 }
 
-/* .greeting {
-  animation: animate 32s infinite;
-} */
 
+/* ANIMATIONS */
 @keyframes animate {
   0% {
     content: 'Hello, my name is Seth.';
@@ -139,6 +137,27 @@
     opacity: 0;
   }
 
+}
+
+.web-dev-animate {
+  animation: web-dev 1s 1;
+}
+
+@keyframes web-dev {
+  from {
+    opacity: .1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes frontEnd {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 480px) {
