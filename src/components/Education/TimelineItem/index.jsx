@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './TimelineItem.css';
 
@@ -12,10 +12,11 @@ const TimelineItem = ({
   color,
   link
 }) => {
+
   return (
     <div className='timeline-item'>
       <div className='timeline-item-img'>
-        <SchoolIcon sx={{ color: {color} }} />
+        <SchoolIcon sx={{ color: { color } }} />
       </div>
       <div className='timeline-item-info'>
         <h3 style={{ color: color }}>{level}</h3>

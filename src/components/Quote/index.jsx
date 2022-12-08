@@ -5,7 +5,7 @@ import './quote.css';
 
 const Quote = () => {
 
-  // intersection observer - JOB
+  // intersection observer
   const [shown, setShown] = useState(false);
   const { ref, inView, entry } = useInView({
     threshold: 0,

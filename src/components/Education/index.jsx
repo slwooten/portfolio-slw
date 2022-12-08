@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 import './Education.css';
 
@@ -6,15 +7,27 @@ import SchoolIcon from '@mui/icons-material/School';
 import TimelineItem from './TimelineItem';
 
 const Education = () => {
+
+  // intersection observer
+  const [shown, setShown] = useState(false);
+  const { ref, inView, entry } = useInView({
+    rootMargin: '-40%',
+    onChange: (inView) => {
+      if (inView) {
+        setShown(true);
+      }
+    }
+  });
+
   return (
-    <div className='education-container'>
-      <div className='ed-img-container'>
+    <div ref={ref} className='education-container'>
+      <div className={shown ? 'ed-img-container fade-in-and-up-no-delay' : 'ed-img-container hidden'}>
         <SchoolIcon sx={{ fontSize: '5rem', marginRight: '10px' }} />
         <h1 style={{ marginLeft: '10px' }}>Education</h1>
       </div>
       <div className='education'>
         {/* <h1>Education</h1> */}
-        <div className='timeline'>
+        <div className={shown ? 'fade-in-and-up-no-delay timeline' : 'timeline hidden'}>
           <TimelineItem
             level='High School Diploma'
             institute='North Iredell High School'
@@ -49,7 +62,7 @@ const Education = () => {
           />
         </div>
       </div>
-      
+
     </div>
   );
 };
