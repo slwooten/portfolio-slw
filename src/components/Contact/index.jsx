@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 import './contact.css';
 
@@ -8,6 +9,17 @@ import Button from '@mui/material/Button';
 
 
 const Contact = () => {
+
+  // intersection observer
+  const [shown, setShown] = useState(false);
+  const { ref, inView, entry } = useInView({
+    rootMargin: '-40%',
+    onChange: (inView) => {
+      if (inView) {
+        setShown(true);
+      }
+    }
+  });
 
   const [subject, setSubject] = useState('');
   const [body, setBody] = useState('');
@@ -25,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='contact-container'>
+    <div ref={ref} className={shown ? 'contact-container fade' : 'contact-container hidden'}>
       <div className='form-container'>
         <h1>Let's Connect</h1>
         <div className='form'>
@@ -50,7 +62,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
-      <div className='social-links'>
+      <div className={shown ? 'social-links fade' : 'social-links hidden'}>
         hey
         hello
         hi

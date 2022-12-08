@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 // css //
 import './Experience.css';
@@ -10,15 +11,27 @@ import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import ExperienceItem from './ExperienceItem';
 
 const Experience = () => {
+
+  // intersection observer
+  const [shown, setShown] = useState(false);
+  const { ref, inView, entry } = useInView({
+    rootMargin: '-40%',
+    onChange: (inView) => {
+      if (inView) {
+        setShown(true);
+      }
+    }
+  });
+
   return (
-    <div className='experience-section'>
-      <div className='ex-img-container'>
+    <div ref={ref} className='experience-section'>
+      <div className={shown ? 'ex-img-container fade' : 'ex-img-container hidden'}>
         <WorkHistoryIcon sx={{ fontSize: '5rem', marginRight: '10px' }} />
         <h1 style={{ marginLeft: '10px' }}>Experience</h1>
       </div>
       <div className='experience'>
         {/* <h1>Education</h1> */}
-        <div className='experience-container'>
+        <div className={shown ? 'experience-container fade' : 'experience-container hidden'}>
           <ExperienceItem
             company='edX'
             link='https://www.edx.org/'

@@ -29,3 +29,22 @@
 .form a {
   text-decoration: none;
 }
+
+.hidden {
+  opacity: 0;
+}
+
+.fade {
+  animation: fade-in-and-up 2s 1;
+}
+
+@keyframes fade-in-and-up {
+  from {
+    transform: translate(0, 100px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
