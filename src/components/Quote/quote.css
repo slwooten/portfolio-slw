@@ -16,3 +16,20 @@
 .quote-container p {
   font-style: italic;
 }
+
+.hidden {
+  opacity: 0;
+}
+
+.grow {
+  animation: grow 2s 1;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
