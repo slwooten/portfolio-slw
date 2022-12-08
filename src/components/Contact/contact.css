@@ -5,7 +5,7 @@
   justify-content: space-around;
   align-items: center;
   padding-bottom: 4rem;
-  padding-top: 1rem;
+  padding-top: 7rem;
   background-color: var(--apple);
 }
 
@@ -13,6 +13,10 @@
   text-align: center;
   /* border: 2px solid black; */
   padding: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 10px/10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .form-container h1 {

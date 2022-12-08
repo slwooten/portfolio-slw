@@ -26,7 +26,7 @@ const Experience = () => {
   return (
     <div ref={ref} className='experience-section'>
       <div className={shown ? 'ex-img-container fade' : 'ex-img-container hidden'}>
-        <WorkHistoryIcon sx={{ fontSize: '5rem', marginRight: '10px' }} />
+        <WorkHistoryIcon className='exp-icon' sx={{ fontSize: '5rem', marginRight: '10px' }} />
         <h1 style={{ marginLeft: '10px' }}>Experience</h1>
       </div>
       <div className='experience'>

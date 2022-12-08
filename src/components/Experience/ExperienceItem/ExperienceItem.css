@@ -1,9 +1,10 @@
 .experience-item {
-  border: 2px solid black;
-  border-radius: 10px/10px;
   text-align: left;
   max-width: 45rem;
   padding: 2rem;
+  border-radius: 10px/10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
 }
 
 .experience-item li {

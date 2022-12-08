@@ -24,7 +24,7 @@ const Projects = () => {
 
   return (
     <div ref={ref} className='projects-section'>
-      <ConstructionIcon className={shown ? 'fade' : 'hidden'} sx={{ fontSize: '4.5rem', marginBottom: '10px' }} />
+      <ConstructionIcon className={shown ? 'work-icon fade' : 'hidden'} sx={{ fontSize: '4.5rem', marginBottom: '10px' }} />
       <h2 className={shown ? 'project-heading fade' : 'project-heading hidden'}>Projects I've built & Contributed to</h2>
       <div className={shown ? 'projects-cards-container fade' : 'projects-cards-container hidden'}>
         <Project

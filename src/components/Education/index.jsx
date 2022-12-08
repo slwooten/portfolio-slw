@@ -22,7 +22,7 @@ const Education = () => {
   return (
     <div ref={ref} className='education-container'>
       <div className={shown ? 'ed-img-container fade-in-and-up-no-delay' : 'ed-img-container hidden'}>
-        <SchoolIcon sx={{ fontSize: '4.5rem', marginRight: '10px' }} />
+        <SchoolIcon className='school-icon' sx={{ fontSize: '4.5rem', marginRight: '10px' }} />
         <h2 style={{ marginLeft: '10px' }}>Education</h2>
       </div>
       <div className='education'>

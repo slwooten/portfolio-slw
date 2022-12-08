@@ -16,7 +16,7 @@ const TimelineItem = ({
   return (
     <div className='timeline-item'>
       <div className='timeline-item-img'>
-        <SchoolIcon sx={{ color: { color } }} />
+        <SchoolIcon className='mini-school-icon' sx={{ color: { color } }} />
       </div>
       <div className='timeline-item-info'>
         <h3 style={{ color: color }}>{level}</h3>
