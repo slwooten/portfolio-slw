@@ -44,3 +44,27 @@
   margin-left: 15px;
   /* max-width: 400px; */
 }
+
+.hidden {
+  opacity: 0;
+}
+
+.fade-in-and-up-no-delay {
+  animation: fade-in-and-up 2s 1;
+}
+
+.fade-in-and-up-delay-1s {
+  animation: fade-in-and-up 2s 1;
+  animation-delay: 1s;
+}
+
+@keyframes fade-in-and-up {
+  from {
+    transform: translate(0, 100px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}

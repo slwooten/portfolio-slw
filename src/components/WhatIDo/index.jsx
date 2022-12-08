@@ -12,24 +12,10 @@ const WhatIDo = () => {
   // intersection observer - JOB
   const [shown, setShown] = useState(false);
   const { ref, inView, entry } = useInView({
-    /* Optional options */
     threshold: 0,
-    onChange: (inView, entry) => {
+    onChange: (inView) => {
       if (inView) {
         setShown(true);
-      }
-    }
-  });
-
-  // intersection observer - FRONTEND
-  const [frontEnd, setFrontEnd] = useState(false);
-  const { ref2, inView2, entry2 } = useInView({
-    /* Optional options */
-    threshold: 0,
-    onChange: (inView, entry) => {
-      if (inView) {
-        setFrontEnd(true);
-        console.log('woohoo');
       }
     }
   });
@@ -48,7 +34,7 @@ const WhatIDo = () => {
         <img onClick={changeHat} src={hat ? backward : front} alt='bitmoji' />
       </div>
       <div className='do-card-container'>
-        <div ref2={ref2} className='card'>
+        <div className='card'>
           <h2>Front End Development</h2>
           <div className='do-items'>
             <h3>
