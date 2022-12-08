@@ -3,10 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  padding-bottom: 10rem;
-  border-bottom: 2px solid black;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+  /* border-bottom: 2px solid black; */
 }
 
 .projects-section h1 {

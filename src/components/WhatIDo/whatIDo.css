@@ -3,9 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid black;
-  padding-bottom: 7rem;
-  padding-top: 3rem;
+  /* border-bottom: 2px solid black; */
+  margin-bottom: 7rem;
+  margin-top: 3rem;
   text-align: center;
 }
 
@@ -68,7 +68,7 @@
 .greeting::before {
   content: 'Hello, my name is Seth.';
   opacity: 1;
-  animation: animate 16s infinite;
+  animation: animate 24s infinite;
 }
 
 
@@ -76,7 +76,7 @@
 @keyframes animate {
   0% {
     content: 'Hello, my name is Seth.';
-    opacity: 1;
+    opacity: 0;
   }
   6.25% {
     content: 'Hello, my name is Seth.';
@@ -146,9 +146,11 @@
 @keyframes web-dev {
   from {
     opacity: .1;
+    transform: scale(.5);
   }
   to {
     opacity: 1;
+    transform: scale(1);
   }
 }
 @keyframes frontEnd {

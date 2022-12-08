@@ -4,11 +4,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
   /* margin-bottom: 7rem; */
   /* border-top: solid 2px black; */
-  border-bottom: 2px black solid;
-  padding-bottom: 8rem;
+  /* border-bottom: 2px black solid; */
 }
 
 .ex-img-container {

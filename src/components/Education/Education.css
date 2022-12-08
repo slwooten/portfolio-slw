@@ -4,10 +4,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
   /* border-top: solid 2px black; */
-  border-bottom: 2px black solid;
+  /* border-bottom: 2px black solid; */
 }
 
 .ed-img-container {
