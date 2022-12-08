@@ -31,10 +31,10 @@ const WhatIDo = () => {
       <div className='do-title'>
         <h1 ref={ref} className={shown ? 'web-dev-animate' : 'none'}>Web Developer</h1>
         <p className='greeting'></p>
-        <img onClick={changeHat} src={hat ? backward : front} alt='bitmoji' />
+        <img className={shown ? 'web-dev-animate' : 'none'} onClick={changeHat} src={hat ? backward : front} alt='bitmoji' />
       </div>
       <div className='do-card-container'>
-        <div className='card'>
+        <div className={shown ? 'web-dev-animate card' : 'card'}>
           <h2>Front End Development</h2>
           <div className='do-items'>
             <h3>
@@ -51,7 +51,7 @@ const WhatIDo = () => {
             </h3>
           </div>
         </div>
-        <div className='card'>
+        <div className={shown ? 'web-dev-animate card' : 'card'}>
           <h2>Full Stack Development</h2>
           <div className='do-items'>
             <h3>
@@ -68,7 +68,7 @@ const WhatIDo = () => {
             </h3>
           </div>
         </div>
-        <div className='card'>
+        <div className={shown ? 'web-dev-animate card' : 'card'}>
           <h2>Back End Development</h2>
           <div className='do-items'>
             <h3>

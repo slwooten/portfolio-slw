@@ -140,7 +140,7 @@
 }
 
 .web-dev-animate {
-  animation: web-dev 2s 1;
+  animation: web-dev 3s 1;
 }
 
 @keyframes web-dev {
