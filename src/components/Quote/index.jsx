@@ -17,9 +17,11 @@ const Quote = () => {
   });
 
   return (
-    <div ref={ref} className={shown ? 'quote-container grow' : 'hidden'}>
-      <h2>Here is a quote about programmin', it's lots of fun.</h2>
-      <p>- Some programmer</p>
+    <div ref={ref} className='quote-container'>
+      <div className={shown ? 'quote-card grow' : 'quote-card hidden'}>
+        <h2>Here is a quote about programmin', it's lots of fun.</h2>
+        <p>- Some programmer</p>
+      </div>
     </div>
   );
 };

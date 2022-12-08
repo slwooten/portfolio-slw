@@ -4,8 +4,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4rem;
-  margin-top: 1rem;
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+  background-color: var(--apple);
   /* border-top: solid 2px black; */
   /* border-bottom: 2px black solid; */
 }

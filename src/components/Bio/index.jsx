@@ -24,7 +24,7 @@ const Bio = () => {
   return (
     <div ref={ref} className='bio-container'>
       <div className='image-container'>
-        <BioIcon className={shown ? 'fade-in-and-up-no-delay' : 'hidden'} sx={{ fontSize: '12rem' }} />
+        <BioIcon className={shown ? 'fade-in-and-up-no-delay bio-icon' : 'hidden'} sx={{ fontSize: '12rem' }} />
       </div>
       <div className='text-container'>
         <div className='text-paragraph-container'>

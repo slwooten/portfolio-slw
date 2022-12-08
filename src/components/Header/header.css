@@ -5,6 +5,8 @@
   padding-left: 1rem;
   padding-right: 1rem;
   border-bottom: solid black 2px;
+  background-color: var(--red);
+  /* position: sticky; */
 }
 
 .title {

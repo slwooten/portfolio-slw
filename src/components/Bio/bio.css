@@ -3,8 +3,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4rem;
-  margin-top: 1rem;
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+  background-color: var(--apple);
 }
 
 .image-container {
@@ -41,6 +42,11 @@
   line-height: 2rem;
   margin-left: 15px;
   /* max-width: 400px; */
+}
+
+.bio-icon {
+  border-radius: 10px/10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .hidden {

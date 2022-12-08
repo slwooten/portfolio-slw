@@ -37,8 +37,8 @@ const Contact = () => {
   };
 
   return (
-    <div ref={ref} className={shown ? 'contact-container fade' : 'contact-container hidden'}>
-      <div className='form-container'>
+    <div ref={ref} className='contact-container'>
+      <div className={shown ? 'form-container fade' : 'form-container hidden'}>
         <h1>Let's Connect</h1>
         <div className='form'>
           <TextField

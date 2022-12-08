@@ -3,3 +3,15 @@
   /* font-family: 'Open Sans'; */
   font-family: 'Montserrat';
 }
+
+:root {
+  /* --main-bg-color: brown; */
+
+  /* --red: #EE6352; */
+  --red: #e54d26;
+  --purple: #7765E3;
+  --skyBlue: #72DDF7;
+  --lighGrey: #F4F4ED;
+  --yellowGreen: #9FD356;
+  --apple: #f5f5f7;
+}

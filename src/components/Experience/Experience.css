@@ -1,11 +1,15 @@
+.experience-section {
+  background-color: var(--apple);
+}
+
 .experience-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4rem;
-  margin-top: 1rem;
+  padding-bottom: 4rem;
+  padding-top: 1rem;
   /* margin-bottom: 7rem; */
   /* border-top: solid 2px black; */
   /* border-bottom: 2px black solid; */
@@ -21,7 +25,7 @@
   /* border-top: solid 2px black; */
   /* border-bottom: solid 2px black; */
   padding: .5rem;
-  margin-top: 5rem;
+  padding-top: 5rem;
   /* padding: 2rem; */
 }
 
