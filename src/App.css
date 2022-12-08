@@ -9,9 +9,11 @@
 
   /* --red: #EE6352; */
   --red: #e54d26;
-  --purple: #7765E3;
+  --blue:#3d8fc6;
   --skyBlue: #72DDF7;
-  --lighGrey: #F4F4ED;
-  --yellowGreen: #9FD356;
+  --yellow: #f0db4f;
+  --nodeGreen: #83cd29;
+  --graphqlPink: #e434aa;
+  --reactBlue: #61dafb;
   --apple: #f5f5f7;
 }
