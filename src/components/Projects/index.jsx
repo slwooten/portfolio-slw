@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 import './projects.css';
 
@@ -10,11 +11,22 @@ const Projects = () => {
 
   const [acitveIndex, setActiveIndex] = useState(4);
 
+    // intersection observer
+    const [shown, setShown] = useState(false);
+    const { ref, inView, entry } = useInView({
+      rootMargin: '-40%',
+      onChange: (inView) => {
+        if (inView) {
+          setShown(true);
+        }
+      }
+    });
+
   return (
-    <div className='projects-section'>
-      <ConstructionIcon sx={{ fontSize: '5rem', marginBottom: '10px' }} />
-      <h1 className='project-heading'>Projects I've built & Contributed to</h1>
-      <div className='projects-cards-container'>
+    <div ref={ref} className='projects-section'>
+      <ConstructionIcon className={shown ? 'fade' : 'hidden'} sx={{ fontSize: '4.5rem', marginBottom: '10px' }} />
+      <h2 className={shown ? 'project-heading fade' : 'project-heading hidden'}>Projects I've built & Contributed to</h2>
+      <div className={shown ? 'projects-cards-container fade' : 'projects-cards-container hidden'}>
         <Project
           title='Classroom'
           appLink='https://classroom-tracker-app.herokuapp.com/'
