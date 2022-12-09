@@ -1,14 +1,23 @@
 import React from 'react';
 
 import './header.css';
+import sw from '../../images/SW.png';
 
 import EmailIcon from '@mui/icons-material/Email';
 
 const Header = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
   return (
     <div className='header-container'>
       <div className='title'>
-        <h1>Logo here</h1>
+        <img onClick={scrollToTop} src={sw} alt='logo' />
       </div>
       <div className='nav-tabs'>
         <a href='mailto:slwooten@gmail.com' target='new'>
