@@ -4,9 +4,12 @@
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  border-bottom: solid black 2px;
+  /* border-bottom: solid black 2px; */
   background-color: var(--red);
-  /* position: sticky; */
+  background-color: var(--blue);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .title {
