@@ -18,8 +18,8 @@ function App() {
       <WhatIDo />
       <Quote />
       <Bio />
-      <Education />
       <Projects />
+      <Education />
       <Experience />
       <Contact />
       <ScrollButton />

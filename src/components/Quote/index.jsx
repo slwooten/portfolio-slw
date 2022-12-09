@@ -19,8 +19,8 @@ const Quote = () => {
   return (
     <div ref={ref} className='quote-container'>
       <div className={shown ? 'quote-card grow' : 'quote-card hidden'}>
-        <h2>Here is a quote about programmin', it's lots of fun.</h2>
-        <p>- Some programmer</p>
+        <h2>"Life is like riding a bicycle. To keep your balance, you must keep moving."</h2>
+        <p>- Albert Einstein</p>
       </div>
     </div>
   );
