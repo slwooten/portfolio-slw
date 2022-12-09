@@ -5,6 +5,7 @@
   border-radius: 10px/10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: white;
+  margin: 1rem;
 }
 
 .experience-item li {
@@ -22,6 +23,6 @@
 
 @media screen and (max-width: 480px) {
   .experience-item {
-    border: none; 
+    border: none;
   }
 }

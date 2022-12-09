@@ -64,7 +64,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .ed-img-container h1 {
+  .ed-img-container h2 {
     font-size: 2rem;
   }
 }
