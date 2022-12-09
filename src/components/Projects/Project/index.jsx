@@ -36,13 +36,13 @@ const Project = ({
             <div>
               <h4>Repository</h4>
               <a className='project-link-git' target='new' href={gitLink}>
-                <GitHubIcon className='icon' sx={{ fontSize: '3rem' }} />
+                <GitHubIcon className='icon' sx={{ fontSize: '3rem', color: '#e54d26' }} />
               </a>
             </div>
             <div>
               <h4>Application</h4>
               <a className='project-link-app' target='new' href={appLink}>
-                <LaunchIcon className='icon' sx={{ fontSize: '3rem' }} />
+                <LaunchIcon className='icon' sx={{ fontSize: '3rem', color: '#61dafb' }} />
               </a>
             </div>
 
@@ -52,7 +52,7 @@ const Project = ({
         <ReadMore
           className='expand-icon'
           onClick={onShow}
-          sx={{ fontSize: '3rem', color: 'green' }}
+          sx={{ fontSize: '3rem' }}
         />
       )}
     </div>

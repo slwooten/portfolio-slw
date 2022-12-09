@@ -36,6 +36,7 @@
 
 .text-paragraph-container h2 {
   font-size: 2rem;
+  color: var(--blue);
 }
 
 .text-paragraph-container p {
@@ -47,6 +48,7 @@
 .bio-icon {
   border-radius: 10px/10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: var(--blue);
 }
 
 .hidden {
