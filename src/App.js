@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import Education from './components/Education';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import ScrollButton from './components/ScrollButton';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Projects />
       <Experience />
       <Contact />
+      <ScrollButton />
     </div>
   );
 }

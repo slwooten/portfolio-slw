@@ -1,0 +1,17 @@
+.scroll-btn-container {
+  background-color: var(--apple);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-btn {
+  margin: 3rem;
+  color: var(--nodeGreen);
+}
+
+.scroll-btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}

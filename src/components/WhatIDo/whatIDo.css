@@ -43,6 +43,15 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.doc-link a {
+  text-decoration: none;
+}
+
+.doc-link:hover {
+  transform: scale(1.2);
+  transition: ease 48ms;
+}
+
 /* .card { */
 /* border: 2px solid black; */
 /* } */

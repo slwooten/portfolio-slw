@@ -12,13 +12,13 @@ const Header = () => {
       </div>
       <div className='nav-tabs'>
         <a href='mailto:slwooten@gmail.com' target='new'>
-          <EmailIcon sx={{ color: 'red' }} />
+          <EmailIcon sx={{ color: 'white' }} />
         </a>
         <a href='https://github.com/slwooten' target='new'>
-          <i class="devicon-github-original colored"></i>
+          <i style={{ color: 'white' }} class="devicon-github-original colored"></i>
         </a>
         <a href='https://www.linkedin.com/in/sl-wooten/' target='new'>
-          <i class="devicon-linkedin-plain colored"></i>
+          <i style={{ color: 'white' }} class="devicon-linkedin-plain colored"></i>
         </a>
       </div>
     </div>

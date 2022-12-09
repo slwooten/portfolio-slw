@@ -63,9 +63,11 @@ const Contact = () => {
         </div>
       </div>
       <div className={shown ? 'social-links fade' : 'social-links hidden'}>
-        hey
-        hello
-        hi
+        Built with{' '}
+        <a href='https://reactjs.org/' target='new'>
+          React.js
+        </a>
+        <i class="react-icon devicon-react-original colored"></i>
       </div>
     </div>
   );
