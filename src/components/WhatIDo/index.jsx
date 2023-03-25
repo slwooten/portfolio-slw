@@ -29,7 +29,7 @@ const WhatIDo = () => {
   return (
     <div className='do-container'>
       <div className='do-title'>
-        <h1 ref={ref} className={shown ? 'web-dev-animate' : 'none'}>Web Developer</h1>
+        <h1 ref={ref} className={shown ? 'web-dev-animate' : 'none'}>Software Developer</h1>
         <p className='greeting'></p>
         <img className={shown ? 'web-dev-animate' : 'none'} onClick={changeHat} src={hat ? backward : front} alt='bitmoji' />
       </div>
