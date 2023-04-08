@@ -11,22 +11,40 @@ const Projects = () => {
 
   const [acitveIndex, setActiveIndex] = useState(4);
 
-    // intersection observer
-    const [shown, setShown] = useState(false);
-    const { ref, inView, entry } = useInView({
-      rootMargin: '-40%',
-      onChange: (inView) => {
-        if (inView) {
-          setShown(true);
-        }
+  // intersection observer
+  const [shown, setShown] = useState(false);
+  const { ref, inView, entry } = useInView({
+    rootMargin: '-40%',
+    onChange: (inView) => {
+      if (inView) {
+        setShown(true);
       }
-    });
+    }
+  });
 
   return (
     <div ref={ref} className='projects-section'>
       <ConstructionIcon className={shown ? 'work-icon fade' : 'hidden'} sx={{ fontSize: '4.5rem', marginBottom: '10px' }} />
       <h2 className={shown ? 'project-heading fade' : 'project-heading hidden'}>Projects I've built & Contributed to</h2>
       <div className={shown ? 'projects-cards-container fade' : 'projects-cards-container hidden'}>
+        <Project
+          title='Over / Under'
+          appLink='https://over-under.herokuapp.com/'
+          gitLink='https://github.com/slwooten/over-under'
+          tech={[
+            'React.js',
+            'Axios',
+            'Material UI',
+            'Express.js',
+            'Node.js',
+            'Express Rate Limit',
+          ]}
+          isActive={acitveIndex === 3}
+          onShow={() => setActiveIndex(3)}
+          hide={() => setActiveIndex(4)}
+        >
+          Over / Under is a sports app that allows you to search for 2 teams which will result in some basic statistics from their matchups this season.
+        </Project>
         <Project
           title='Classroom'
           appLink='https://classroom-tracker-app.herokuapp.com/'
@@ -78,21 +96,6 @@ const Projects = () => {
           hide={() => setActiveIndex(4)}
         >
           A React application that generates color palettes and displays examples of what they would look like in use.
-        </Project>
-        <Project
-          title='Vue To Do'
-          appLink='https://slwooten.github.io/vuejs-todo-list/'
-          gitLink='https://github.com/slwooten/vuejs-todo-list'
-          tech={[
-            'Vue.js',
-            'Vue.js Composition API',
-            'Local Storage',
-          ]}
-          isActive={acitveIndex === 3}
-          onShow={() => setActiveIndex(3)}
-          hide={() => setActiveIndex(4)}
-        >
-          A Todo list application built with Vue.js and utilizing Local Storage. Minimal styling. Built to practice with Vue.js.
         </Project>
       </div>
     </div>

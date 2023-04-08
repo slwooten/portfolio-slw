@@ -37,12 +37,25 @@ const Experience = () => {
             link='https://www.edx.org/'
             position='Teacher Assistant'
             startDate='Jun 2022'
-            endDate='Present'
+            endDate='March 2023'
             location='Charlotte, NC'
             description={[
               'Assist in the online delivery of a modern, full stack web development curriculum (ES6+, SQL, MongoDB, RESTful APIs, PWAs, React, GraphQL',
               'Evaluate student projects and provide constructive feedback',
               'Provide accurate and concise answers to student questions'
+            ]}
+          />
+          <ExperienceItem
+            company='Ally Financial'
+            link='https://www.ally.com/'
+            position='Jr. Software Developer'
+            startDate='March 2023'
+            endDate='Present'
+            location='Charlotte, NC'
+            description={[
+              'React.js development',
+              'Testing automation with Cypress.io',
+              'Api development with Node.js, Apigee, etc.'
             ]}
           />
         </div>
